@@ -11,6 +11,11 @@ app.use(express.json());
 // serve frontend
 app.use(express.static(path.join(__dirname, "frontend")));
 
+app.get("/", (req, res) => {
+  res.send("Hackathon backend is live 🚀");
+});
+
+
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI)
 
