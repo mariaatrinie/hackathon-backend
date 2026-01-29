@@ -1,1 +1,3 @@
 https://github.com/mariaatrinie/hackathon-backend
+
+mongodb+srv://mariaatrinie:<db_password>@cluster0.dzi5bpc.mongodb.net/
