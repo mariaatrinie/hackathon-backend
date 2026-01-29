@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Card Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Payment Form</h2>
+
+  <form id="form">
+    <input type="text" id="cardName" placeholder="Card Name" required>
+
+    <input type="text" id="cardHolderName" placeholder="Card Holder Name" required>
+
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="paymentMethod" value="cash" required> Cash
+      </label>
+      <label>
+        <input type="radio" name="paymentMethod" value="card"> Card
+      </label>
+      <label>
+        <input type="radio" name="paymentMethod" value="credit"> Credit
+      </label>
+    </div>
+
+    <button type="submit">Save</button>
+  </form>
+
+  <h3>Saved Data</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Card Name</th>
+        <th>Holder Name</th>
+        <th>Method</th>
+      </tr>
+    </thead>
+    <tbody id="table"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
